@@ -1,0 +1,22 @@
+[{
+				"id": "ajson1",
+				"text": "Simple root node",
+				"leaf": true
+			},
+			{
+				"id": "ajson2",
+				"leaf": false,
+				"text": "Root node 2",
+				"children": [{
+						"id": "ajson3",
+						"text": "Child 1",
+						"leaf": true
+					},
+					{
+						"id": "ajson4",
+						"text": "Child 2",
+						"leaf": true
+					}
+				]
+			}
+		]
