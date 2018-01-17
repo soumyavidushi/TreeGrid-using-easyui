@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Simple jsTree</title>
+	<link rel="stylesheet" type="text/css" href="https://www.jeasyui.com/easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="https://www.jeasyui.com/easyui/themes/icon.css">
+	 <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/demo/demo.css">
+	<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+
+</head>
+<body>
+	<table id="tt" class="easyui-treegrid" style="width:600px;height:400px"
+        data-options="url:'./treegrid_data1.json',idField:'id',treeField:'name'">
+    <thead>
+        <tr>
+            <th data-options="field:'name',width:180">Task Name</th>
+            <th data-options="field:'size',width:60,align:'right'">Persons</th>
+            <th data-options="field:'date',width:80">Begin Date</th>
+        </tr>
+    </thead>
+</table>
+</body>
+</html>
