@@ -9,6 +9,12 @@
 	<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.min.js"></script>
 	<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
 
+	<script>
+	function formatDetail(value,row){
+		var href = 'www.google.com';
+		return '<a target="_blank" href="' + href + '">View Detail</a>';
+	}
+</script>
 </head>
 <body>
 	<table id="tt" class="easyui-treegrid" style="width:600px;height:400px"
@@ -16,7 +22,7 @@
     <thead>
         <tr>
             <th data-options="field:'name',width:180">Task Name</th>
-            <th data-options="field:'size',width:60,align:'right'">Persons</th>
+            <th data-options="field:'size',width:60,align:'right'" formatter="formatDetail">Persons</th>
             <th data-options="field:'date',width:80">Begin Date</th>
         </tr>
     </thead>
